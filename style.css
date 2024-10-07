@@ -1,6 +1,6 @@
 html, body {
-  box-sizing: border-box;
   min-width: 280px;
+  background-color: #563971;
 }
 
 #main-doc {
@@ -10,20 +10,28 @@ html, body {
 
 #navbar {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 300px;
   height: 100%;
   border-right: 6px double black;
+  text-align: center;
 }
 
-nav header {
-  font-size: 28px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
+header {
+  font-size: 26px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #f1e8b8;
+}
+
+#navhead {
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
   display: block;
-  font-size: 24px;
+  font-size: 22px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 15px 15px;
   cursor: pointer;
@@ -41,18 +49,36 @@ a:hover {
   width: 800px;
 }
 
+ul {
+  color: #fffee8
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #8EB19D
+}
+
+h3 {
+  color: #f9e784;
+}
+
 @media (max-width: 800px) {
   
   #navbar {
     width: 200px;
   }
 
-  nav header {
+  #navhead {
+    font-size: 17px;
+  }
+
+  #main-doc header {
     font-size: 18px;
   }
 
   nav a {
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 15px;
   }
 
@@ -62,5 +88,9 @@ a:hover {
 
   #diagram {
     width: 450px;
+  }
+
+  p {
+    font-size: 16px;
   }
 }
